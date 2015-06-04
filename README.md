@@ -1,2 +1,3 @@
-# python-1
-Super cool python-1
+# python-0
+skilstak is a bossssssssssss
+

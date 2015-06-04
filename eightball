@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+
+import random
+import colors as c
+
+print(c.clear)
+print(c.red + '''
+Welcome to the magic eightball!
+Enter you question below.
+''' + c.reset)
+
+answers = [
+    'yes',
+    'no',
+    'maybe',
+    'my sources say no',
+    'my sources say yes',
+    'signs point to yes',
+    'signs point to no',
+    'it is decidedly so',
+    'it is certain',
+    'yes definetly',
+    'ask again later',
+    'better not tell you now',
+    'without a doubt',
+    'as i see it, yes',
+    'reply hazy try again',
+    'cannot predict now',
+    'dont count on it',
+    'outlook not so goood',
+    'very doubtful',
+    'my reply is no',
+
+]
+
+while True:
+    question = input('--> ' + c.yellow)
+    answer = random.choice(answers)
+    print(c.random_color() + answer + c.reset)
