@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+import unicorns as quiz
+import colors as c
+
+print(c.clear + quiz.intro)
+
+while quiz.questions:
+    question_function = random.choice(quiz.questions)
+    question_function()
+    if is_correct:
+        print("you got it right!")
+        quiz.questions.remove(question_function)
+    else:
+        print("hummmmmm.")
