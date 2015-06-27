@@ -8,18 +8,42 @@ HOOGA BALOOGA
 
 ''')
 
-name = input(c.blue + '''
-VWHAT IS YOUR NAME
-''' + c.reset)
-name = name.lower().strip()
+def ask(question):
+    print(c.blue + "what is your name" + c.reset)
+    answer = input("< " + c.base3).lower().strip()
+    print(c.reset)
+    return answer
 
-quest = input(c.magenta + '''
-VWHAT IS YOUR QUEST
-''' + c.reset)
+def live():
+    print(c.green + "Right, off you go then." + c.reset)
+
+def die():
+    print("Thou art cast into the gorge of eternal peril")
+
+name = ask("What is your name?")
+quest = ask("What is your quest?")
 
 if name in ['lancelot','galahad']:
+    colour = ask("What is your favorite colour?")
+    if colour == 'blue':
+        live()
+    else:
+        die()
 
-    color = input(c.orange + '''
-    VWHAT IS YOU FAVORITE COLOUR
-    ''' + c.reset)
-    
+elif name == 'robin':
+    capital = ask('What is the capital of Assyria')
+    if capital in ['assur','ashur','nimrud', 'qalat sherqat','calah']:
+        live()
+    else:
+        die()
+
+elif name == 'arthur':
+    speed = ask("what is the air speed velocity of an unladen swallow?")
+    if speed in  ['24 mph','11 mps', '24 miles per hour', '11 meters per second']:
+        live()
+    elif speed == 'what do you mean african or european swallow?':
+        print('The Bridgekeeper is thrown into the Gorge of Eternal Peril')
+        live()
+    else:
+        die
+

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-import unicorns as quiz
+import random
+import myquiz as quiz
 import colors as c
 
 print(c.clear + quiz.intro)
