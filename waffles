@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+import colors as c
+from utils import ask
+print(c.clear)
+try:
+    waffles = ask('Do you like waffles?')
+    if waffles == 'yes':
+        pancakes = ask('Do you like pancakes?')
+        if pancakes == 'yes':
+            french_toast = ask('Do you like french toast')
+            if french_toast == 'yes':
+                print('Good job :)')
+
+            else:
+                print('No')
+        else:
+            print('What in the world pancakes are the best')
+    else:
+        print('How the heck do you not like waffles')
+except KeyboardInterrupt:
+    exit(0)
