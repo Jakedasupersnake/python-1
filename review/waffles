@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+import colors as c
+from utils import ask
+
+waffles = ask('do you like waffles')
+if waffles = 'yes':
+    pancakes = ask('do you like pancakes'0
+    if pancakes = 'yes':
+        french_toast = ask('do you like french toast')
+        if french_toast = 'yes':
+            print('YUUUUUUMMMMMM')
+        else:
+            print('then you obviously dont like life')
+    else:
+        print('well i love pancakes')
+else:
+    print('youre right i dont like it that much either')

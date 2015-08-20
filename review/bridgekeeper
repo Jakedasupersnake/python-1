@@ -1,0 +1,33 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.cyan + "WELCOME TO THE BRIDGE OF DEATH")
+
+name = input("What is your name ")
+
+if name == 'lancelot' or name == 'galahad':
+    quest = input("What is your quest ") 
+    color = input("What is your favorite colour ")
+if color == 'blue':
+    live()
+else:
+    die()
+
+if name == 'robin':
+    name = input("What is your name ")
+    quest = input("What is your quest " )
+    capital = input ("What is the capital of Assyria ")
+if capital == 'assur':
+    live()
+else:
+    die()
+
+if name == 'king arthur':
+    name = input("What is your name ")
+    quest = input("What is your quest ")
+    swallow = input("What is the airspeed velocity of ab unladen swallow")
+if speed = 24 mph, 11 mps:
+    live()
+else:
+    die()
